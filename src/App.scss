@@ -49,3 +49,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
