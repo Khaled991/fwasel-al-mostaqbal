@@ -1,8 +1,9 @@
 import { Component, lazy, Suspense } from 'solid-js';
-import { Router, pathIntegration, MatchRoute } from '@rturnq/solid-router';
+import { Router, MatchRoute } from '@rturnq/solid-router';
 import { Switch } from 'solid-js';
 const HomePage = lazy(() => import('./page/HomePage/HomePage'));
 const NavBar = lazy(() => import('./components/NavBar/NavBar'));
+const SupportPage = lazy(() => import('./page/SupportPage/SupportPage'));
 import './App.scss';
 
 const App: Component = () => {
@@ -14,6 +15,9 @@ const App: Component = () => {
           <Suspense fallback={<div>loading...</div>}>
             <MatchRoute end path="/">
               <HomePage />
+            </MatchRoute>
+            <MatchRoute end path="/support">
+              <SupportPage />
             </MatchRoute>
           </Suspense>
         </Switch>
