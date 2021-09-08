@@ -14,13 +14,16 @@
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.9",
     "vite": "^2.5.1",
+    "vite-plugin-mkcert": "^1.5.1",
     "vite-plugin-solid": "^2.0.3"
   },
   "dependencies": {
     "@rturnq/solid-router": "^0.3.0",
     "babel-plugin-jsx-dom-expressions": "^0.29.15",
+    "firebase": "^9.0.1",
     "redux": "^4.1.1",
     "sass": "^1.39.0",
+    "socket.io-client": "^2.2.0",
     "solid-js": "^1.1.1"
   }
 }
